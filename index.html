@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>DEEP Platform</title>
+  <style>
+    body {
+      background-color: #f4f4f4;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 40px;
+      text-align: center;
+      background-color: #fff;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 6px;
+      margin-top: 100px;
+    }
+
+    h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+	
+	.line {
+      content: '';
+	  text-align:center;
+      width: 400px;
+      height: 7px;
+      background-color: #004494;
+    }
+
+    p {
+      font-size: 16px;
+    }
+  </style>
+  <meta http-equiv="refresh" content="5;url=https://deep.ec.europa.eu/">
+  <script>
+    function countdown() {
+      var seconds = 5;
+      var countdownElement = document.getElementById('countdown');
+      var interval = setInterval(function() {
+        countdownElement.textContent = seconds;
+        seconds--;
+        if (seconds < 0) {
+          clearInterval(interval);
+        }
+      }, 1000);
+    }
+  </script>
+</head>
+<body onload="countdown()">
+  <div class="container">
+  <h1>De-risking Energy Efficiency Platform (DEEP) </h1>
+  <p class="line">.</p>
+  <p> DEEP platform has moved on a new home!</p>
+	<p><b>please update your bookmarks!</b></p>
+    <p>Redirecting to the new website in <span id="countdown">5</span> seconds...</p>
+    <p>If you are not redirected, <a href="https://deep.ec.europa.eu/">click here</a>.</p>
+  </div>
+</body>
+</html>
